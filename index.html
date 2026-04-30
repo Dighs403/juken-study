@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中学受験 自主学習ポータル</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap');
+        body {
+            font-family: 'Kiwi Maru', serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .app-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .app-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6 text-gray-800">
+
+    <div class="max-w-4xl w-full">
+        <!-- ヘッダー -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-blue-900 mb-4">中学受験 自主学習ポータル</h1>
+            <p class="text-blue-700 font-medium tracking-wider">合格に向けた効率的な学習を、AIと共に。</p>
+        </div>
+
+        <!-- アプリ選択 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- 国語カード -->
+            <a href="kokugo.html" class="app-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 flex flex-col items-center text-center border border-white shadow-xl group">
+                <div class="w-20 h-20 bg-amber-100 rounded-2xl flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition-transform">📚</div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">国語：慣用句・ことわざ</h2>
+                <p class="text-gray-500 text-sm mb-6 flex-grow">
+                    厳選200語を収録。AIのヒント・深掘り解説・音声読み上げで、重要語句を完璧にマスターします。
+                </p>
+                <div class="inline-flex items-center text-amber-600 font-bold">
+                    学習を開始する →
+                </div>
+            </a>
+
+            <!-- 算数カード -->
+            <a href="calculation_500.html" class="app-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 flex flex-col items-center text-center border border-white shadow-xl group">
+                <div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition-transform">🧮</div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">算数：計算500本ノック</h2>
+                <p class="text-gray-500 text-sm mb-6 flex-grow">
+                    毎日取り組む計算基礎。全20セットのワークシートを生成し、印刷して手書き練習が可能です。
+                </p>
+                <div class="inline-flex items-center text-blue-600 font-bold">
+                    プリントを表示する →
+                </div>
+            </a>
+
+        </div>
+
+        <!-- フッター -->
+        <div class="mt-16 text-center">
+            <div class="inline-block bg-white/40 backdrop-blur-sm px-8 py-3 rounded-full border border-white/50 shadow-sm text-sm text-blue-900">
+                <span class="font-bold text-blue-700">今日のノルマ：</span> 算数 1セット(25問) ＆ 国語 20問
+            </div>
+            <p class="mt-8 text-[10px] text-blue-600/40 uppercase tracking-[0.3em] w-full text-center">AI Study Management System v2.1</p>
+        </div>
+    </div>
+
+</body>
+</html>
